@@ -31,3 +31,9 @@
 .Custom-Transition {
   transition: 0.8s all;
 }
+
+.form-control:focus {
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0.2rem rgba(70, 70, 70, 0.25);
+}
+
