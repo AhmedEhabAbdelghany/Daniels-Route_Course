@@ -1,0 +1,33 @@
+.Custom-Nav-BG {
+  background-color: #fff;
+}
+
+.Custom-Nav-BG a {
+  color: black;
+}
+
+.Custom-Nav-Logo {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.Custom-Nav-Font {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Custom-Bg-Progress {
+  background-color: #f6f6f6;
+  border-radius: 0;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.Custom-Z-Index {
+  z-index: 5;
+}
+
+.Custom-Transition {
+  transition: 0.8s all;
+}

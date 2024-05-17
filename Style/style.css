@@ -1,0 +1,586 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body a {
+  text-decoration: none;
+}
+
+:root {
+  --main-color: #1c1c1c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.typed-cursor {
+  font-family: "Montserrat", sans-serif;
+}
+
+.Our-Tiitle h3 {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  z-index: 4;
+}
+
+.Our-Tiitle h3::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+
+.Our-BG {
+  background-color: #f7f7f7;
+}
+
+/* ------------------------Start Nav and Header------------------------ */
+
+header {
+  background-image: url(../images/bg.jpg);
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+  h1 {
+    font-size: 50px;
+    font-weight: 800;
+  }
+  p {
+    font-size: 50px;
+    font-weight: 200;
+  }
+  span {
+    font-size: 60px;
+    font-weight: 400;
+  }
+}
+
+.header-icon {
+  z-index: 10;
+  color: white;
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: #1c1c1c94;
+  transition: 0.5s all;
+  &:hover {
+    color: var(--main-color);
+    background-color: white;
+    cursor: pointer;
+  }
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.596);
+}
+
+.Caption {
+  z-index: 1;
+}
+
+/* Typed Animation */
+
+.typed-cursor {
+  /* animation: blink; */
+  color: white;
+  margin-left: 3px;
+}
+
+/* End Typed Animation  */
+
+.container-fluid a:hover {
+  color: black;
+}
+
+#navbarSupportedContent a:hover {
+  color: black;
+}
+
+#navbarSupportedContent a {
+  position: relative;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show a {
+  position: relative;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show a:after {
+  color: black;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid;
+  transition: 0.5s all;
+}
+
+/* ------------------------End Nav and Header------------------------ */
+
+/* ------------------------Start About------------------------ */
+
+.our-hero {
+  position: relative;
+  z-index: 1;
+}
+
+.our-hero:after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  background-image: url(../img/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+.hero img {
+  width: 200;
+}
+
+.progress-bar {
+  background-color: black;
+}
+
+.Our-Progress {
+  p {
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+  }
+  span {
+    color: #4e4e4e;
+  }
+}
+
+.About-Info {
+  h3 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+
+.About-Btn {
+  .Download-Btn {
+    background-color: black;
+    color: white;
+    transition: 0.6s all;
+  }
+  .Download-Btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+  .Contact-Btn {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 0.6s all;
+  }
+  .Contact-Btn:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+/* ------------------------End About------------------------ */
+
+/* ------------------------Start Services------------------------ */
+
+.Our-Services {
+  h3 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+  }
+  h3::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+  }
+  .Subtitle {
+    position: relative;
+  }
+  .Subtitle::before {
+    margin: auto;
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    border-bottom: 5px solid var(--main-color);
+  }
+  .Our-Card-Des {
+    h6 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 3;
+    }
+  }
+}
+
+.icon {
+  font-size: 25px;
+  width: 80px;
+  height: 80px;
+  transition: 0.5s all;
+  background-color: #cdcdcd65;
+}
+
+.Our-Card-Hover:hover .icon {
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* ------------------------End Services------------------------ */
+
+/* ------------------------Start Counters------------------------ */
+
+.Our-Counters {
+  color: black;
+}
+
+.Our-Counters::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.Our-Counters p {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+  font-weight: 600;
+}
+
+.Our-Card-Des h2 {
+  font-weight: 900;
+  color: #343434;
+}
+
+.icon-Counter {
+  font-size: 35px;
+  width: 80px;
+  height: 80px;
+  transition: 0.5s all;
+  font-family: "Poppins", sans-serif;
+  color: #343434;
+  font-weight: 400;
+}
+
+.Our-ICons-Counter {
+  z-index: 5;
+}
+
+/* ------------------------End Counters------------------------ */
+
+/* ------------------------Start Portfolio------------------------ */
+
+.Our-Card-Hover2 {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.our-hover {
+  position: absolute;
+  width: 90%;
+  height: 95%;
+  top: 100%;
+  left: 5%;
+  background-color: white;
+  transition: 0.5s all;
+  opacity: 0;
+}
+
+.our-hover h6 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 15px;
+  transform: translateY(-200px);
+  transition: all 1s;
+}
+
+.Our-Card-Hover2:hover .our-hover {
+  top: 2.5%;
+  left: 5%;
+  opacity: 1;
+}
+
+.Our-Card-Hover2:hover .our-hover h6 {
+  transform: translateY(1px);
+}
+
+.portfolio-icon {
+  z-index: 12;
+  color: white;
+  font-size: 10px;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  transition: 1s all;
+  transform: translateY(200px);
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+}
+
+.Our-Card-Hover2:hover .portfolio-icon {
+  transform: translateY(1px);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: black;
+  color: white;
+}
+
+.nav-link {
+  color: black;
+  margin: 0 15px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+/* ------------------------End Portfolio------------------------ */
+
+/* ------------------------Start Carousel------------------------ */
+
+.carousel-item {
+  transition: 0.8s all;
+}
+
+.author-des {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+  word-spacing: 2px;
+  font-weight: 200;
+}
+
+.carousel-inner span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+}
+
+.author h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.Carousel-Image {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #1c1c1c;
+}
+
+/* ------------------------End Carousel------------------------ */
+
+/* ------------------------Start Team------------------------ */
+
+.Our-Blog-Style {
+  .author {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 1rem 0;
+    display: block;
+    font-size: 1.4rem;
+  }
+  .author-des {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  h4 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+  }
+  h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &:hover .team-img {
+    transform: scale(1.1);
+  }
+}
+
+.team-img {
+  transition: 0.8s all;
+}
+
+.Hover-Team {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  inset: 5px;
+  opacity: 0;
+  transition: 0.5s;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+
+.team-img:hover .Hover-Team {
+  transform: rotateY(360deg) scale(1, 1);
+  opacity: 1;
+  transition: 0.8s all;
+}
+
+.Team-icon {
+  cursor: pointer;
+  z-index: 12;
+  color: white;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  transition: 1s all;
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+}
+
+.Team-Bott {
+  background-color: #5b5b5b;
+}
+
+/* ------------------------End Team------------------------ */
+
+/* ------------------------Start Form------------------------ */
+
+.Our-Card-Des2 h2 {
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 900;
+  line-height: 3;
+  color: inherit;
+}
+
+.Our-Card-Des2 p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.icon2 {
+  width: 70px;
+  height: 70px;
+  font-size: 25px;
+  transition: 0.5s all;
+  background-color: #f4f4f4;
+  &:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.Send-BTN {
+  transition: 1s all;
+  width: 100px;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.Send-BTN:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+.Our-Touch span {
+  color: var(--main-color);
+}
+
+.form-control {
+  background-color: #f4f4f4;
+}
+
+.form-control:focus {
+}
+
+/* ------------------------End Form------------------------ */
+
+Footer {
+  /* height: 20vh; */
+  background-color: var(--main-color);
+}
+
+Footer p {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+}
